@@ -19,6 +19,7 @@ Funciones utilizadas en el ejemplo
 *findContours(...)* <-- Algoritmo para la detecciÛn de objetos
 
 
+
 > **Nota:**
 
-> - El resto de las operaciones involucran la manipulaciÛn de im·genes y videos (carga y muestra por pantalla).
+> - El resto de las operaciones involucran la manipulaci√≥n de im√°genes y videos (carga y muestra por pantalla).
