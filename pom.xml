@@ -4,11 +4,18 @@
     <artifactId>demo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
-    <dependency>
-    <groupId>org.bytedeco</groupId>
-    <artifactId>javacv</artifactId>
-    <version>1.2</version>
-  </dependency>
+      <dependency>
+	    <groupId>org.bytedeco</groupId>
+	    <artifactId>javacv</artifactId>
+	    <version>1.2</version>
+	  </dependency>
+	  <!-- https://mvnrepository.com/artifact/org.bytedeco.javacpp-presets/ffmpeg -->
+<dependency>
+    <groupId>org.bytedeco.javacpp-presets</groupId>
+    <artifactId>ffmpeg</artifactId>
+    <version>3.1.2-1.2</version>
+</dependency>
+
 
   </dependencies>
   <build>
