@@ -4,10 +4,16 @@ import static org.bytedeco.javacpp.opencv_highgui.WINDOW_AUTOSIZE;
 import static org.bytedeco.javacpp.opencv_highgui.imshow;
 import static org.bytedeco.javacpp.opencv_highgui.namedWindow;
 import static org.bytedeco.javacpp.opencv_highgui.waitKey;
-import static org.bytedeco.javacpp.opencv_imgcodecs.imread;
-import static org.bytedeco.javacpp.opencv_imgproc.*;
-import static org.bytedeco.javacpp.opencv_core.split;
-
+import static org.bytedeco.javacpp.opencv_imgproc.CV_BGR2GRAY;
+import static org.bytedeco.javacpp.opencv_imgproc.CV_CHAIN_APPROX_SIMPLE;
+import static org.bytedeco.javacpp.opencv_imgproc.CV_RETR_CCOMP;
+import static org.bytedeco.javacpp.opencv_imgproc.CV_THRESH_BINARY;
+import static org.bytedeco.javacpp.opencv_imgproc.Canny;
+import static org.bytedeco.javacpp.opencv_imgproc.boundingRect;
+import static org.bytedeco.javacpp.opencv_imgproc.cvtColor;
+import static org.bytedeco.javacpp.opencv_imgproc.findContours;
+import static org.bytedeco.javacpp.opencv_imgproc.rectangle;
+import static org.bytedeco.javacpp.opencv_imgproc.threshold;
 
 import org.bytedeco.javacpp.opencv_core.Mat;
 import org.bytedeco.javacpp.opencv_core.MatVector;
@@ -112,7 +118,7 @@ public class OpenCV3Test {
 	
 	public static void main(String[] args){
 		//String video = "C:\\SSD\\datasets\\img-processing\\alone.mp4";
-		String video = "C:\\SSD\\datasets\\img-processing\\586917256.mp4";
+		String video = "586917256.mp4";
 		//String video = "C:\\SSD\\datasets\\img-processing\\garden.mp4";
 		//String filename = "young-strawberry-transplants.jpg";
 		
